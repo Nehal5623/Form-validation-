@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <link rel="stylesheet" href="style.css">
+    
+     <link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-
+	BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-5 text center shadow-lg p-3 mb-5 bg-white rounded">
+                <h1>Form Validation</h1>
+                
+                <input type="text" id ="name" class = "form-control" placeholder="username">
+                <small id="username_error" class="failure"></small>
+                <br>
+                <input type="text" id="mail" class = "form-control" placeholder="email">
+               <small id="email_error" class="failure"> </small>
+                <br>
+                <input type="text"id="password" class = "form-control" placeholder="password">
+                <small id="password_error" class="failure"></small>
+                <br>
+                <input type="text" id="cnfpassword" class = "form-control" placeholder="confirm password">
+                <small id="confirmpassword_error" class="failure"></small>
+                <br>
+                <button class="btn btn-primary" onclick="validate()">Submit</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="form.JS"></script>
